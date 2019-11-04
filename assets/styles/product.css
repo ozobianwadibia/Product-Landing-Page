@@ -1,0 +1,56 @@
+* {
+  outline: 1px solid red;
+}
+
+.overlay {
+  background-image: url("../images/overlay.jpg");
+  background-color: rgb(133, 15, 15); /* Used if the image is unavailable */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.interest-form {
+  background-color: rgb(168, 119, 119);
+  color: rgb(255, 255, 255);
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+label {
+  text-align: center;
+}
+input[type="email"] {
+  width: 25rem;
+}
+input[type="submit"] {
+  width: 25rem;
+}
+
+.product-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+}
+
+.pitch-description {
+  background-color: rgb(33, 180, 173);
+  color: rgb(255, 255, 255);
+}
+
+.service-plan {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.call-to-action {
+  background-color: rgb(48, 41, 41);
+  padding: 3rem;
+  color: rgb(255, 255, 255);
+}
