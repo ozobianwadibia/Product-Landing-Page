@@ -30,43 +30,45 @@
         <div class="product-text">
           <h1>I am the coolest thing around</h1>
           <h3>Lorem ipsum dolor sit amet.</h3>
-          <button>Purchase Now</button>
-          <button>Learn More</button>
+          <div class="call-to-action">
+            <button class="w3-btn w3-black w3-margin-right">
+              Purchase Now
+            </button>
+            <button class="w3-btn w3-aqua w3-margin-left">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
 
       <!-- image  -->
-
       <section class="w3-row w3-brown">
         <video class="w3-container w3-third" id="video" controls>
-          <source src=http://techslides.com/demos/sample-videos/small.webm
-          type=video/webm> <source
-          src=http://techslides.com/demos/sample-videos/small.ogv
-          type=video/ogg> <source
-          src=http://techslides.com/demos/sample-videos/small.mp4
-          type=video/mp4> <source
-          src=http://techslides.com/demos/sample-videos/small.3gp
-          type=video/3gp>
+          <source src="./assets/video/MP4/Sunset-Siesta.mp4" type="video/mp4" />
+          <source
+            src="./assets/video/WEBM/Sunset-Siesta.webm"
+            type="video/webm"
+          />
+          Your browser does not support the audio element.
         </video>
 
+        <!-- TODO: change me -->
         <form
-          class="w3-container w3-twothird"
+          class="w3-container w3-twothird w3-card-8"
           id="form"
           onsubmit="return checkFormInput()"
           method="post"
           action="https://www.freecodecamp.com/email-submit"
         >
-          <label for="email"
-            >Enter email <br />
-            <input
-              class="w3-input w3-border"
-              type="email"
-              name=""
-              id="email"
-              placeholder="Email"
-              required
-            />
-          </label>
+          <h2 class="w3-center">Email</h2>
+          <input
+            class="w3-input w3-border"
+            type="email"
+            name=""
+            id="email"
+            placeholder="Email"
+            required
+          />
           <br />
           <input
             class="w3-btn w3-black w3-center w3-input"
@@ -75,6 +77,8 @@
             id="submit"
           />
         </form>
+
+        <!-- TODO: change me -->
       </section>
       <section class="w3-row w3-grey">
         <div class="w3-container w3-half">
@@ -91,7 +95,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <br />
-          <ul>
+          <ul class="w3-ul">
             <li>Lorem ipsum dolor sit.</li>
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Lorem, ipsum dolor.</li>

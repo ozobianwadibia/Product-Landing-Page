@@ -66,9 +66,8 @@
   }
 }
 
-/**********************************************************************************/
+/*****************************************************/
 /* main background picture */
-
 .overlay {
   background-image: url("../images/overlay.jpg");
   background-color: rgb(23, 15, 133);
@@ -82,12 +81,15 @@
 
 label {
   text-align: center;
+  margin: auto;
 }
 input[type="email"] {
-  width: 80%;
+  width: 40%;
+  margin: auto;
 }
 input[type="submit"] {
-  width: 80%;
+  width: 40%;
+  margin: auto;
 }
 
 .product-text {
@@ -99,14 +101,15 @@ input[type="submit"] {
   transform: translate(-50%, -50%);
 }
 
-.row {
+.product-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.call-to-action {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
-
-.service-plan {
-  width: 100%;
-  margin: 0 auto;
+  align-content: center;
 }
