@@ -22,8 +22,8 @@
   display: block;
   color: rgb(75, 20, 20);
   text-align: center;
-  padding: 1.2rem 1.3rem;
-  font-size: 1.1rem;
+  padding: 1.2em 1.3em;
+  font-size: 1.1em;
   text-decoration: none;
 }
 
@@ -80,12 +80,12 @@
 }
 
 .intro {
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: bolder;
 }
 
 #form {
-  padding-top: 7rem;
+  padding-top: 7em;
 }
 label {
   text-align: center;
@@ -109,12 +109,6 @@ input[type="submit"] {
   transform: translate(-50%, -50%);
 }
 
-.product-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
 .call-to-action {
   display: flex;
   flex-direction: row;
@@ -131,6 +125,10 @@ input[type="submit"] {
 .features-pic,
 .features {
   flex: 1;
+}
+
+#footer a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1040px) {
