@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/styles/w3css.css" />
     <link rel="stylesheet" href="./assets/styles/product.css" />
     <title>Product Landing Page</title>
@@ -16,7 +20,9 @@
     <div class="w3-container-fluid">
       <header id="header">
         <nav id="nav-bar" class="nav-bar">
-          <a href="#"><img id="header-img" src="" alt="Logo Here"/></a>
+          <a class="nav-link" href="#home"
+            ><img id="header-img" src="" alt="Asteroid Logo Here"
+          /></a>
           <a class="nav=link" href="#home">Home</a>
           <a class="nav-link" href="#features">Features</a>
           <a class="nav-link" href="#pricing">Pricing</a>
@@ -26,10 +32,10 @@
         </nav>
       </header>
       <!-- image -->
-      <div class="overlay">
+      <div class="overlay" id="home">
         <div class="product-text">
-          <h1>I am the coolest thing around</h1>
-          <h3>Lorem ipsum dolor sit amet.</h3>
+          <h1 class="intro">I am the coolest spacey thing around</h1>
+          <h3 class="intro">Lorem ipsum dolor sit amet.</h3>
           <div class="call-to-action">
             <button class="w3-btn w3-black w3-margin-right">
               Purchase Now
@@ -42,9 +48,9 @@
       </div>
 
       <!-- image  -->
-      <section class="w3-row w3-brown">
+      <section class="w3-row w3-container w3-grey w3-border">
         <video
-          class="w3-container w3-third"
+          class="w3-col m6"
           id="video"
           controls
           poster="./assets/video/Snapshots/Sunset-Siesta.jpg"
@@ -59,19 +65,19 @@
 
         <!-- TODO: change me -->
         <form
-          class="w3-container w3-twothird w3-card-8"
+          class="w3-col m6"
           id="form"
           onsubmit="return checkFormInput()"
           method="post"
           action="https://www.freecodecamp.com/email-submit"
         >
-          <h2 class="w3-center">Email</h2>
+          <h2 class="w3-center">Your Email</h2>
           <input
             class="w3-input w3-border"
             type="email"
-            name=""
+            name="email"
             id="email"
-            placeholder="Email"
+            placeholder="Enter Email"
             required
           />
           <br />
@@ -82,19 +88,19 @@
             id="submit"
           />
         </form>
-
-        <!-- TODO: change me -->
       </section>
-      <section class="w3-row w3-grey">
-        <div class="w3-container w3-half">
+      <section
+        class="w3-row w3-container w3-grey w3-border features-row"
+        id="features"
+      >
+        <div class="w3-col m6 features-pic">
           <img
             class="w3-image"
             src="./assets/images/cubicle.jpg"
             alt="lorem ipsum"
-            style="width:100%"
           />
         </div>
-        <div class="w3-container w3-half w3-padding-32">
+        <div class="w3-col m6 features w3-center w3-padding-64">
           <h1>Retina-Ready & Responsive</h1>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
@@ -108,7 +114,7 @@
         </div>
       </section>
 
-      <section class="w3-container w3-center w3-padding-32 w3-yellow">
+      <section class="w3-container w3-center w3-padding-32 w3-grey w3-border">
         <h1>Choose your best plan</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
@@ -116,7 +122,7 @@
         </p>
       </section>
 
-      <section class="w3-row w3-red service-plan">
+      <section class="w3-row w3-red service-plan" id="pricing">
         <div
           class="w3-quarter w3-container w3-center w3-border-right w3-border-white"
         >
@@ -177,7 +183,7 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, porro!
         </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <button class="w3-btn w3-black">Download Tata Now</button>
+        <button class="w3-btn w3-black">Download Asteroid Now</button>
       </section>
 
       <footer id="footer" class="w3-blue w3-row w3-padding-64 w3-border-black">

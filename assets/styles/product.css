@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* navbar styling */
@@ -66,11 +67,10 @@
   }
 }
 
-/*****************************************************/
 /* main background picture */
 .overlay {
   background-image: url("../images/overlay.jpg");
-  background-color: rgb(23, 15, 133);
+  background-color: rgb(68, 67, 75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -79,16 +79,24 @@
   position: relative;
 }
 
+.intro {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#form {
+  padding-top: 7rem;
+}
 label {
   text-align: center;
   margin: auto;
 }
 input[type="email"] {
-  width: 40%;
+  width: 90%;
   margin: auto;
 }
 input[type="submit"] {
-  width: 40%;
+  width: 90%;
   margin: auto;
 }
 
@@ -112,4 +120,43 @@ input[type="submit"] {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+}
+
+.features-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features-pic,
+.features {
+  flex: 1;
+}
+
+@media screen and (max-width: 1040px) {
+  #video {
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+  }
+
+  #form {
+    width: 100%;
+    margin-bottom: 12rem;
+  }
+  .features-row {
+    flex-direction: column;
+  }
+  .features-pic {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+  }
+  .features {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .intro {
+    color: rgb(168, 107, 32);
+  }
 }
