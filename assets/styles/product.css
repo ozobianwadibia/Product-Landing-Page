@@ -1,5 +1,4 @@
 * {
-  /* outline: 1px solid red; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,7 +27,7 @@
 }
 
 .nav-bar a:hover {
-  background-color: rgb(221, 221, 221);
+  background-color: rgba(221, 221, 221, 0.2);
   color: rgb(48, 41, 41);
 }
 
